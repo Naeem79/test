@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}/* register.css */
+body{
+  background-color: #ccc;
+}
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form .title {
+    color: #663399;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #term{
+    display: inline;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .form1 label {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%; /* Set width to ensure consistency */
+  }
+  .alert-container {
+    position: relative; /* Set position to relative */
+  }
+  
+  .alert {
+    position: absolute; /* Set position to absolute */
+    top: -40px; /* Adjust top position as needed */
+    width: 100%; /* Ensure full width */
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  .inp{
+    width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  .form1 input[type="text"],
+  .form1 input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #check {
+    margin-bottom: 15px;
+  }
+  
+  
+
+  .link {
+    text-decoration: none;
+    font-weight: lighter;
+    color: gray;
+    margin: 10px;
+  }
+  
+  
+  .Button {
+    background-color: #387adf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .Button:hover {
+    background-color: rgb(21, 63, 141);
+  }
+  
+  /* Checkbox styling */
+  #check input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Password visibility toggle */
+  .password-input {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .form.disabled input,
+.form.disabled button {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.lbl {
+  display: block;
+  margin-bottom: 15px;
+}
+  

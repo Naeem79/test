@@ -1,0 +1,244 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 5em);
+  width: 100%;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(194, 194, 194);
+  padding-bottom: 2em;
+  border-radius: 5px;
+  max-width: 1200px;
+  width: 100%; /* Set width to 100% to take up the entire screen */
+  background-color: #F1FFFD;
+}
+@media screen and (min-width: 600px) {
+  .form {
+    width: calc(100% - 0.5em); /* Set width to 50% minus half of the gap on larger screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.title {
+  font-size: 30px;
+  background-color: #4a2ec5;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tabHeader {
+  display: flex;
+  flex-wrap: wrap; /* Allow tabs to wrap to the next line */
+  justify-content: center; /* Center-align tabs */
+  margin-bottom: 0.5em; /* Add some space at the bottom */
+}
+
+.tabHeader > div {
+  flex: 0 0 auto;
+  min-width: 100px; /* Set the minimum width for each tab */
+  margin-right: 1em; /* Add margin between tabs */
+}
+
+@media screen and (max-width: 600px) {
+  .tabHeader {
+    flex-direction: column; /* Stack tabs vertically on smaller screens */
+    align-items: center; /* Center-align stacked tabs */
+  }
+
+  .tabHeader > div {
+    flex-basis: auto; /* Allow tabs to take full width */
+    margin-right: 0; /* Remove margin between tabs */
+    margin-bottom: 0.5em; /* Add some space between stacked tabs */
+  }
+}
+
+
+
+.tabs {
+  border-color: transparent !important;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tabs .MuiTabs-indicator {
+  background-color: black !important;
+}
+
+.tabPanel {
+  display: none;
+  width: 100%; /* Set width to 100% to occupy the entire container */
+}
+
+.tabPanel.active {
+  display: block;
+}
+
+.inputField {
+  width: 100%; /* Set width to 50% minus half of the gap */
+  @media screen and (min-width: 600px) {
+    width: calc(50% - 0.5em); /* Set width to 50% minus half of the gap on larger screens */
+  }
+  margin-bottom: 1em;
+}
+
+.checkbox {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  width: 20%;
+  margin-left: 0;
+}
+
+.primary {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.secondary {
+  background-color: lightgray;
+  color: black;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.feedbackMessage {
+  color: red;
+  font-size: small;
+}
+
+/* Common styles for input and label elements */
+.custom-input,
+.custom-file-upload {
+  width: calc(100% - 10px);
+  padding: 12px 10px;
+  border-radius: 6px;
+  font-size: inherit;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.2s ease-out;
+}
+
+/* Input field styles */
+.custom-input {
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+}
+
+.custom-input:focus,
+.custom-input:valid {
+  border: 1px solid #54a0ff;
+}
+
+.custom-input:focus + .label,
+.custom-input:valid + .label {
+  transform: translateY(-50%) scale(0.75);
+  opacity: 1;
+}
+
+/* Label styles */
+.label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), opacity 0.3s linear;
+  user-select: none;
+}
+
+/* File upload button styles */
+.custom-file-upload {
+  background-color: white;
+  border: 1px dashed gray;
+  cursor: pointer;
+  padding: 12px 10px;
+  margin-top: 5px;
+}
+
+.custom-file-upload::before {
+  content: "+";
+  display: block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+  transition: transform 0.2s ease-out;
+}
+
+.custom-file-upload:hover {
+  border: 1px dashed #54a0ff;
+}
+
+.custom-file-upload:hover::before {
+  color: #54a0ff;
+  transform: rotate(45deg);
+}
+
+.custom-file-upload:active {
+  filter: brightness(0.9);
+}
+
+.custom-file-upload + input[type="file"] {
+  visibility: hidden;
+}
+
+/* Container wrapping input and label elements */
+.input-wrapper {
+  position: relative;
+  height: auto;
+  min-height: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Wrapper for file input elements */
+.inputFileWrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.infi{
+  display: flex;
+  @media screen and (min-width: 600px) {
+    flex-direction: row; 
+    
+  }
+   gap: 10px;
+  margin: 10px auto;
+  flex-direction: column;
+}
